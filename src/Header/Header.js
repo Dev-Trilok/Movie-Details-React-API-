@@ -9,21 +9,21 @@ const Header = ({ searchMovie, query, setQuery, movies }) => {
     return (
         <Fragment>
             <div className="header">
-                <h1 className="title">Movie-search</h1>
+                <h1 className="title">Movie-Details</h1>
 
                 {/*Search form*/}
 
                 <div className="search">
                     <form className="search-form" onSubmit={searchMovie}>
-                        <label
+                        {/* <label
                             htmlFor="query"
                             className="name"
                         >
-                        </label>
+                        </label> */}
                         <input
                             type="text"
                             name="query"
-                            placeholder="i.e Guardians of the Galaxy Vol. 2"
+                            placeholder="Type Movie name here..."
                             value={query}
                             onChange={(e) => setQuery(e.target.value)}
                         />
